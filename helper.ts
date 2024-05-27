@@ -19,3 +19,19 @@ convertIntoArray(false); // boolean
 convertIntoArray([]); // Array
 convertIntoArray({}); // Object
 convertIntoArray({}); // custom something
+
+
+type Props<T> = {
+    themeOptions: T[],
+    selectedTheme: T
+}
+
+
+interface InnerProps<T> {
+    themeOptions: T[],
+    selectedTheme: T
+}
+
+
+let data: Props<string>;
+let data1: InnerProps<string>;
