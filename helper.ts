@@ -11,6 +11,8 @@ function createArrayPair<T extends string | number, K>(input1: T, input2: K): [T
     return [input1, input2];
 }
 
+// we can restrict type using extends only accept these value
+
 const inlineArrayPair = <T, K>(input1: T, input2: K): [T, K] => [input1, input2];
 
 convertIntoArray('string'); // string
