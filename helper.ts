@@ -1,5 +1,6 @@
 // as far we don't mentions a type so its by default any
-function convertIntoArray(input) {
+function convertIntoArray<T>(input: T): T[] { // --> Type parameter
+    // now this function converted into the generic functions because it accepts type as parameter, where it invoked
     return [input];
 }
 
