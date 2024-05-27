@@ -3,7 +3,7 @@ function convertIntoArray<T>(input: T): T[] { // T --> Type parameter
     // now this function converted into the generic functions because it accepts type as parameter, where it invoked
     return [input];
 }
-
+// Generics are specifying relationship between properties in a object, or parameter in the functions in return value
 const inlineFunction = <T>(input: T): T[] => [input];
 
 // muliple Parameter generice Types
